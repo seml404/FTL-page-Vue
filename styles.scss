@@ -169,30 +169,30 @@ body {
     border-radius: 50%;
     background-color: #717174;
   }
+}
 
-  .addresses__button {
-    padding: 4px 12px;
-    background-color: #717174;
-    border-radius: 2px;
+.addresses__button {
+  padding: 4px 12px;
+  background-color: #717174;
+  border-radius: 2px;
+}
+
+.addresses__item:first-child {
+  .addresses__symbol {
+    background-color: #ef483e;
   }
-
   .addresses__choose {
-    color: #ffffff;
-    opacity: 50%;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 13px;
-    line-height: 16px;
+    opacity: 100%;
   }
+}
 
-  &:first-child {
-    .addresses__symbol {
-      background-color: #ef483e;
-    }
-    .addresses__choose {
-      opacity: 100%;
-    }
-  }
+.addresses__choose {
+  color: #ffffff;
+  opacity: 50%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 @media (max-width: 728px) {
