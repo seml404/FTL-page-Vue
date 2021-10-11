@@ -36,12 +36,14 @@ body {
 .container {
   max-width: 1144px;
   margin: 0 auto;
+  padding-left: 144px;
 }
 
 .header {
   padding-top: 40px;
 }
-.header .main-title {
+
+.main-title {
   font-family: "HelveticaNeue_bold", "Arial", sans-serif;
   font-size: 56px;
   line-height: 68px;
@@ -98,11 +100,14 @@ body {
   padding: 0px;
 }
 
+.input-time {
+  color: #cfcfcf;
+}
+
 .input {
   height: 44px;
   display: inline-block;
   width: 100%;
-  margin-bottom: 16px;
 }
 
 .checkbox__wrapper {
@@ -115,6 +120,11 @@ body {
   width: 24px;
   border: 2px solid #ffffff;
   margin-right: 12px;
+}
+
+.time-text {
+  display: flex;
+  justify-content: space-between;
 }
 
 .addresses__item {
@@ -173,4 +183,21 @@ body {
 }
 .addresses__item:first-child .addresses__choose {
   opacity: 100%;
+}
+
+@media (max-width: 728px) {
+  .container {
+    max-width: 343px;
+    padding-left: 0px;
+  }
+
+  .main-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .section__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
