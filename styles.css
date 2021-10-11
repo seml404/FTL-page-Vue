@@ -175,13 +175,9 @@ body {
 .addresses__item:first-child .addresses__symbol {
   background-color: #ef483e;
 }
-.addresses__item:first-child .addresses__choose {
-  opacity: 100%;
-}
 
 .addresses__choose {
   color: #ffffff;
-  opacity: 50%;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 13px;
