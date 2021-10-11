@@ -1,5 +1,5 @@
 <template>
-  <div class="temperature-wrapper" v-if="visibility">
+  <div class="input-section input-section-small" v-if="visibility">
     <p class="input-name">{{ typeName.title }}</p>
     <input
       class="input"
@@ -24,4 +24,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.input-section-small {
+  flex: 0 1 172px;
+}
+</style>
