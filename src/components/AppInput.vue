@@ -1,5 +1,5 @@
 <template>
-  <div classs="input-section">
+  <div class="input-section input-section-small">
     <p class="input-name">{{ typeName.title }}</p>
     <input
       :class="typeName.class"
@@ -31,5 +31,9 @@ export default {
 <style>
 .input-section {
   margin-bottom: 16px;
+}
+
+.input-section-small {
+  flex: 0 1 172px;
 }
 </style>
