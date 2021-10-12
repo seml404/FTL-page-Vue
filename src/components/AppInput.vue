@@ -1,5 +1,5 @@
 <template>
-  <div class="input-section input-section-small">
+  <div class="input-section">
     <p class="input-name">{{ typeName.title }}</p>
     <input
       :class="typeName.class"
@@ -31,9 +31,10 @@ export default {
 <style>
 .input-section {
   margin-bottom: 16px;
+  flex: 0 1 172px;
 }
 
-.input-section-small {
-  flex: 0 1 172px;
+.input-section:last-child {
+  margin-bottom: 0px;
 }
 </style>

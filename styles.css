@@ -93,7 +93,6 @@ body {
 .input-name {
   font-size: 13px;
   line-height: 15.5px;
-  padding-top: 16px;
   padding-bottom: 8px;
 }
 .input-name.input-name_checkbox {
@@ -125,6 +124,10 @@ body {
 .time-text {
   display: flex;
   justify-content: space-between;
+}
+
+.addresses {
+  padding-bottom: 16px;
 }
 
 .addresses__item {

@@ -11,6 +11,8 @@ export default {
     this.needTemperature = data;
   },
   resolveForm() {
+    ;
+
     console.log("worked");
     for (let item of Object.keys(this.type)) {
       if (!item.choosenValue) {
@@ -23,8 +25,11 @@ export default {
       }
     }
     if (!this.formFilled) {
-      this.popUpVisible = true;
-      setTimeout(() => (this.popUpVisible = false), 1500);
+      document.documentElement.clientWidth > 728 ? this.popUpVisibleDesktop = true : this.popUpVisibleMobile = true;
+      setTimeout(() => {
+        this.popUpVisibleDesktop = false;
+        this.popUpVisibleMobile = false
+      }, 3000);
     } else {
       location.reload();
     }

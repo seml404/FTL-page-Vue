@@ -1,6 +1,5 @@
 export default {
-  section: [
-    {
+  section: [{
       number: 1,
       title: "Маршрут",
     },
@@ -22,8 +21,7 @@ export default {
       title: "Грузоподъемность",
       defaultValue: "Не выбрана",
       choosenValue: "",
-      options: [
-        {
+      options: [{
           optionName: "Вариант 1",
           id: Math.random(),
         },
@@ -50,8 +48,7 @@ export default {
       title: "Способ погрузки",
       choosenValue: "",
       defaultValue: "Не выбран",
-      options: [
-        {
+      options: [{
           optionName: "Вариант 1",
           id: Math.random(),
         },
@@ -78,8 +75,7 @@ export default {
       title: "Тип груза",
       choosenValue: "",
       defaultValue: "Не выбран",
-      options: [
-        {
+      options: [{
           optionName: "Вариант 1",
           id: Math.random(),
         },
@@ -100,14 +96,13 @@ export default {
           id: Math.random(),
         },
       ],
-      class: "select",
+      class: "select select-big",
     },
     select4: {
       title: "Класс опасности",
       choosenValue: "",
       defaultValue: "Не выбран",
-      options: [
-        {
+      options: [{
           optionName: "Класс 1",
           id: Math.random(),
         },
@@ -144,8 +139,7 @@ export default {
     },
     input5: {
       title: "Комментарий к заказу",
-      defaultValue:
-        "Укажите особенности въезда на территорию склада или подъезда к адресу",
+      defaultValue: "Укажите особенности въезда на территорию склада или подъезда к адресу",
       class: "",
     },
     input6: {
@@ -172,8 +166,8 @@ export default {
     highTemperature: "",
   },
   needTemperature: false,
-  popUpVisible: false,
+  popUpVisibleDesktop: false,
+  popUpVisibleMobile: false,
   formFilled: false,
-  popUpAlert:
-    "Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.",
+  popUpAlert: "Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.",
 };

@@ -1,13 +1,15 @@
 <template>
-  <div class="input-section input-section-small" v-if="visibility">
-    <p class="input-name">{{ typeName.title }}</p>
-    <input
-      class="input"
-      :class="typeName.class"
-      :value="modelValue"
-      @input="change"
-      @keyup.enter="this.$emit('submitted')"
-    />
+  <div class="temperature-wrapper" v-if="visibility">
+    <div class="input-section input-section-small">
+      <p class="input-name">{{ typeName.title }}</p>
+      <input
+        class="input"
+        :class="typeName.class"
+        :value="modelValue"
+        @input="change"
+        @keyup.enter="this.$emit('submitted')"
+      />
+    </div>
   </div>
 </template>
 
@@ -25,6 +27,10 @@ export default {
 </script>
 
 <style>
+.temperature-wrapper {
+  padding-top: 16px;
+}
+
 .input-section-small {
   flex: 0 1 172px;
 }

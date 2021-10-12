@@ -67,6 +67,10 @@ export default {
   max-width: 356px;
 }
 
+.select-big {
+  margin-bottom: 16px;
+}
+
 .select .select_small {
   max-width: 172px;
 }

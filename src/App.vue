@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    <app-pop-up :visible="popUpVisible" :contentText="popUpAlert"></app-pop-up>
+    <app-pop-up
+      :visible="popUpVisibleDesktop"
+      :contentText="popUpAlert"
+      class="pop-up-desktop"
+    ></app-pop-up>
     <form action="#" class="main-form">
       <header class="header">
         <h1 class="main-title">FTL: Прямая машина</h1>
@@ -79,6 +83,11 @@
           :typeName="type.input5"
         ></app-comments>
       </section>
+      <app-pop-up
+        :visible="popUpVisibleMobile"
+        :contentText="popUpAlert"
+        class="pop-up-mobile"
+      ></app-pop-up>
     </form>
   </div>
 </template>

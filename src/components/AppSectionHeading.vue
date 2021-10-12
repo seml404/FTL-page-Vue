@@ -11,4 +11,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.section-title {
+  padding-bottom: 16px;
+}
+</style>
